@@ -12,10 +12,10 @@ M6 bolts have a 1mm thread pitch, which is just coarse enough to practically 3D 
 
 When 3D printing Everclamp-compatible threads, use a standard M6 nut and bolt for tolerance calibration.
 
-## Example
+## Examples
 
-This 5x5 everclamp attaches to an oscillating multitool, using a 5x5 sqwasher and M6 thumbscrews to hold sandpaper in any orientation:
+This 5x5 Everclamp attaches to an oscillating multitool, using a 5x5 sqwasher and M6 thumbscrews to hold sandpaper in any orientation:
 ![](media/multitool_sandpaper.jpg)
 
-4 everclamp columns have a center-to-center spacing of 25 mm:
+4 columns of Everclamp should have a center-to-center spacing of 25 mm:
 ![](media/everclamp5x5.jpg)

@@ -20,7 +20,7 @@ This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an o
 
 Always use an off-the-shelf M6 nut and bolt for tolerance calibration when 3D printing Everclamp-compatible threads.
 
-When I create M6x1 threads in Fusion360, the holes are too tight when printed.  This solution is a bit janky, but it works for me:
+When I create M6x1 threads in Fusion360, the holes print too tight.  My solution is a bit janky, but it works:
 
 - Search `%localappdata%\Autodesk` for the `ISOMetricprofile.xml` file.  See [this article](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Custom-Threads-in-Fusion-360.html) for details.
 

@@ -44,7 +44,7 @@ When I create M6x1 threads in Fusion360, the holes are too tight when printed.  
       </Thread>
 ```
 
-And insert this block.  Your printer may require a different scaling factor:
+- Insert this block.  Your printer may require a different scaling factor:
 
 ```
       <Thread>

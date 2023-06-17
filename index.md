@@ -17,5 +17,5 @@ When 3D printing Everclamp-compatible threads, use a standard M6 nut and bolt fo
 This 5x5 Everclamp attaches to an oscillating multitool, using a 5x5 sqwasher and M6 thumbscrews to hold sandpaper in any orientation:
 ![](media/multitool_sandpaper.jpg)
 
-4 columns of Everclamp should have a center-to-center spacing of 25 mm:
+4 columns of Everclamp have a center-to-center spacing of exactly 25 mm:
 ![](media/everclamp5x5.jpg)

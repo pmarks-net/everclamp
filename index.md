@@ -1,6 +1,6 @@
 ## Specification
 
-The Everclamp specification simply defines an array of threaded holes:
+The Everclamp specification defines the following rectangular array of threaded holes:
 
 - Thread pattern: **M6x1**
 - Grid spacing: **25/3 mm** (8.333 mm) center to center

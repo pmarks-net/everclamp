@@ -1,3 +1,5 @@
+![](media/everclamp_logo.png)
+
 ## Specification
 
 The Everclamp specification defines the following rectangular array of threaded holes:

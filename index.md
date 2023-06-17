@@ -15,7 +15,7 @@ M6 bolts have a 1mm thread pitch, which is just coarse enough to practically 3D 
 This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper in any orientation:
 ![](media/multitool_sandpaper.jpg)
 
-4 columns of Everclamp have a center-to-center spacing of exactly 25 mm:
+4 columns have a center-to-center spacing of exactly 25 mm:
 ![](media/everclamp5x5.jpg)
 
 ## Calibration

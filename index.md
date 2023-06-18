@@ -8,7 +8,7 @@ The Everclamp specification defines the following rectangular array of threaded 
 - Grid spacing: **25/3 mm** (8.333 mm) center to center
 
 ## Why these values?
-M6 bolts have a 1mm thread pitch, which is just coarse enough to practically 3D print threaded holes and thumbscrews.  The densest possible spacing for such an array is about 8mm, so we choose a nearby value that aligns nicely with metric grids like 100x100.
+M6 bolts have a 1mm thread pitch, which is just coarse enough to practically 3D print threaded holes and thumbscrews.  The densest possible spacing for such an array is about 8mm, so we choose a nearby value that aligns nicely with metric grids like 100x100 mm.
 
 The 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm.  In theory, Everclamp is compatible with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants) given a large enough array.
 

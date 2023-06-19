@@ -28,19 +28,21 @@ Let's see what the metric system has to offer:
 | M7        | 1                 | 7                    | 11                       |
 | M8        | 1.25              | 8                    | 13                       |
 
-The main use case is 3D printing with layer heights around 0.2 mm, so a thread pitch below 1 mm is not very reliable.  M6 is the smallest size with a 1 mm pitch, and seems to have enough cross sectional area for light duty plastic.
+The main use case is 3D printing with layer heights around 0.2 mm, so a thread pitch below 1 mm is not reliable.  M6 is the smallest size with a 1 mm pitch, and also has enough cross-sectional area for light duty plastic thumbscrews.
 
 ## Why 25/3 mm?
 
-The densest possible spacing for such an array is about 8mm, so we choose a nearby value that aligns nicely with metric grids like 100x100 mm.
+The densest possible spacing for an array of M6 holes is about 8 mm, so we're looking for a number in that ballpark.  I don't like 10 mm because it's not dense enough.
 
-The 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm.  In theory, Everclamp is compatible with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants) given a large enough array.
+For a grid standard to make any sense in the context of the metric system, it needs to include round numbers like "100 mm".  It turns out that 25/3 = 8.333 is very close to our target density.  This spacing includes numbers like 16.6, 25, 33.3, 50, 66, 100, it's the megahertz race all over again.
+
+The 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm, and `n+12` by 100 mm.  So the everclamp grid aligns with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants) given a large enough array.
 
 <img src="media/everclamp5x5.jpg" width="480">
 
 ## Example
 
-This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper in any orientation:
+This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper, a sponge, etc.:
 ![](media/multitool_sandpaper.jpg)
 
 ## Calibration

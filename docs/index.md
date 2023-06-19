@@ -46,7 +46,7 @@ An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25
 
 ## Calibration
 
-I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can print these calibration models and explore which scaling factor is needed to make your slicer and printer compatible with off-the-shelf M6 nuts and bolts.
+I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can print these calibration models and explore which scaling factor is needed to make your printing setup compatible with off-the-shelf M6 nuts and bolts.
 
 In an ideal future, slicers and printers would just make perfect nuts and bolts at 100% scaling factor, in which case these models could serve as a benchmark.
 

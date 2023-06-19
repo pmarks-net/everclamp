@@ -11,7 +11,7 @@ The Everclamp specification defines the following rectangular array of threaded 
 
 For clamping stuff wherever.
 
-I was trying to make a multi-tool to sandpaper adapter, thinking of all the ways one might attach sandpaper to a solid block.  The basic problem is to squeeze two flat plates squeeze together like a clamp.  But where to put the threads, when there might be sandpaper in the way?  We have 3D printers now, so why not print threads everywhere and figure out the rest at runtime?
+I was trying to make a multi-tool to sandpaper adapter, thinking of all the ways one might attach sandpaper to a solid block.  The basic problem is to squeeze two flat plates squeeze together like a clamp.  But where to put the threads, when there might be sandpaper in the way?  We have 3D printers now, so let's just print threads everywhere and figure out the rest at runtime.
 
 My point is not that a dense array of threaded holes is incredibly useful, but it is *mildly* useful, and in order to use one I had to define a grid.  Hence the everclamp standard.  If you make an object with ~6mm holes spaced by some multiple of 25/3 mm, then it can clamp to an oscillating multi-tool, or whatever else someone makes an adapter for.
 

@@ -47,15 +47,31 @@ When I create M6x1 threads in Fusion360, the holes print too tight.  My solution
       </Thread>
 ```
 
-- Insert this block.  Your printer may require a different scaling factor:
+- Insert these scaled-up alternatives:
 
 ```
       <Thread>
         <Gender>internal</Gender>
-        <Class>6H x 108%</Class>
-        <MajorDia>6.63876</MajorDia>
-        <PitchDia>5.859</PitchDia>
-        <MinorDia>5.4378</MinorDia>
-        <TapDrill>5.4</TapDrill>
+        <Class>6H x 102%</Class>
+        <MajorDia>6.270</MajorDia>
+        <PitchDia>5.534</PitchDia>
+        <MinorDia>5.136</MinorDia>
+        <TapDrill>5.100</TapDrill>
       </Thread>
+      <Thread>
+        <Gender>internal</Gender>
+        <Class>6H x 105%</Class>
+        <MajorDia>6.454</MajorDia>
+        <PitchDia>5.696</PitchDia>
+        <MinorDia>5.287</MinorDia>
+        <TapDrill>5.250</TapDrill>
+      </Thread>
+      <Thread>
+        <Gender>internal</Gender>
+        <Class>6H x 108%</Class>
+        <MajorDia>6.639</MajorDia>
+        <PitchDia>5.859</PitchDia>
+        <MinorDia>5.438</MinorDia>
+        <TapDrill>5.400</TapDrill>
+      </Thread>      
 ```

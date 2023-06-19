@@ -19,7 +19,7 @@ My point is not that a dense array of threaded holes is incredibly useful, but i
 
 Let's see what the metric system has to offer:
 
-| Bolt Size | Thread Pitch (mm) | Thread Diameter (mm) | Tensile stress area (mm^2)|
+| Bolt Size | Thread Pitch (mm) | Thread Diameter (mm) | Tensile Stress Area (mm^2)|
 |-----------|-------------------|----------------------|---------------------|
 | M3        | 0.5               | 3                    | 5.0                 |
 | M4        | 0.7               | 4                    | 8.8                 |

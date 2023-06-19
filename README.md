@@ -1,1 +1,1 @@
-Content for https://www.everclamp.org/
+Content for https://everclamp.org/

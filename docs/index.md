@@ -40,11 +40,6 @@ An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25
 
 <img src="media/everclamp5x5.jpg" width="480">
 
-## Example
-
-This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper, a sponge, etc.:
-![](media/multitool_sandpaper.jpg)
-
 ## Calibration
 
 I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can print these calibration models and explore which scaling factor is needed to make your slicer and printer compatible with off-the-shelf M6 nuts and bolts:
@@ -153,3 +148,8 @@ When I create M6 threads in Fusion360, the only scaling factor available is 100%
         <TapDrill>5.400</TapDrill>
       </Thread>
 ```
+
+## Example
+
+This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper, a sponge, etc.:
+![](media/multitool_sandpaper.jpg)

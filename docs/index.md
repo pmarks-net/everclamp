@@ -47,7 +47,7 @@ This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an o
 
 ## Calibration
 
-I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you print these calibration models and explore which scaling factor is needed to make your slicer and printer fit and off-the-shelf M6 nuts and bolts:
+I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can print these calibration models and explore which scaling factor is needed to make your slicer and printer compatible with off-the-shelf M6 nuts and bolts:
 
 ![](media/calibration_arrays.jpg)
 

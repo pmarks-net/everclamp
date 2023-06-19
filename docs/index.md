@@ -42,7 +42,7 @@ For a grid standard to make any sense in the context of the metric system, it ne
 
 An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm, and `n+12` by 100 mm.  In theory, the Everclamp grid is compatible with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants), given a large enough array.
 
-<img src="media/everclamp5x5.jpg" width="480">
+![](media/everclamp5x5.jpg)
 
 ## Calibration
 

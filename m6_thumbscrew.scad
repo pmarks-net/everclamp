@@ -1,8 +1,8 @@
 include <BOSL2/std.scad>
 include <BOSL2/screws.scad>
 
-// Use calibration_bolts.stl to choose this value.
-thread_scale_xy = 97/100;
+// Use calibration_bolts.stl to find the right value for your printer.
+thread_scale_xy = 96/100;
 
 // Dimensions of the thumb-fitting head.
 thumb_diameter = 15;

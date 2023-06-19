@@ -51,7 +51,7 @@ I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blo
 
 <img src="media/calibration_arrays.jpg" width="480">
 
-When I create M6 threads in Fusion360, the only scaling factor is 100%, so here is a somewhat-janky workaround:
+When I create M6 threads in Fusion360, the only scaling factor available is 100%, so here is a somewhat-janky workaround:
 
 - Search `%localappdata%\Autodesk` for the `ISOMetricprofile.xml` file.  See [this article](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Custom-Threads-in-Fusion-360.html) for details.
 

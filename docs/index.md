@@ -15,7 +15,7 @@ https://github.com/pmarks-net/everclamp/
 
 For clamping stuff wherever.
 
-I was trying to make a multi-tool to sandpaper adapter, thinking of all the ways one might attach sandpaper to a solid block.  The general solution is to squeeze two flat plates together like a clamp.  But where to put the threads, when there might be sandpaper in the way?  Well, we have 3D printers now, so let's print threads everywhere and figure out the rest at runtime.
+I was trying to make a [multi-tool to sandpaper adapter](https://www.thingiverse.com/thing:6083263), thinking of all the ways one might attach sandpaper to a solid block.  The general solution is to squeeze two flat plates together like a clamp.  But where to put the threads, when there might be sandpaper in the way?  Well, we have 3D printers now, so let's print threads everywhere and figure out the rest at runtime.
 
 My point is not that a dense array of threaded holes is incredibly useful, but it is *mildly* useful, and in order to use one I had to define a grid.  Hence the everclamp standard.  If you make an object with ~6mm holes spaced by some multiple of 25/3 mm, then it can clamp to an oscillating multi-tool, or whatever else someone makes an adapter for.
 

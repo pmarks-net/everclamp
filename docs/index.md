@@ -7,8 +7,32 @@ The Everclamp specification defines the following rectangular array of threaded 
 - Thread pattern: **M6x1**
 - Grid spacing: **25/3 mm** (8.333 mm) center to center
 
-## Why these values?
-M6 bolts have a 1mm thread pitch, which is just coarse enough to practically 3D print threaded holes and thumbscrews.  The densest possible spacing for such an array is about 8mm, so we choose a nearby value that aligns nicely with metric grids like 100x100 mm.
+## Why would anyone want a dense array of threaded holes?
+
+For clamping stuff wherever.
+
+I was trying to make a mutli-tool to sandpaper adapter, thinking of all the ways you might attach sandpaper to a solid block.  You mainly need two flat plates that squeeze like a clamp.  But where do you put the threads, when there might be sandpaper in the way?  Well, we have 3D printers now, so why not put threads all over the place and figure out the rest at runtime?
+
+My point is not that an array of threaded holes is incredibly useful, but it is *mildly* useful, and in order to use one I had to define a grid.  Hence the everclamp standard.
+
+## Why M6 threads?
+
+Let's see what the metric system has to offer:
+
+| Bolt Size | Thread Pitch (mm) | Thread Diameter (mm) | Hexagonal Head Width (mm)|
+|-----------|-------------------|----------------------|--------------------------|
+| M3        | 0.5               | 3                    | 5.5                      |
+| M4        | 0.7               | 4                    | 7                        |
+| M5        | 0.8               | 5                    | 8                        |
+| M6        | 1                 | 6                    | 10                       |
+| M7        | 1                 | 7                    | 11                       |
+| M8        | 1.25              | 8                    | 13                       |
+
+The main use case is 3D printing with layer heights around 0.2 mm, so a thread pitch below 1 mm is not very reliable.  M6 is the smallest size with a 1 mm pitch, and seems to have enough cross sectional area for light duty plastic.
+
+## Why 25/3 mm?
+
+The densest possible spacing for such an array is about 8mm, so we choose a nearby value that aligns nicely with metric grids like 100x100 mm.
 
 The 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm.  In theory, Everclamp is compatible with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants) given a large enough array.
 

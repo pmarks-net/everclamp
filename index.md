@@ -1,5 +1,3 @@
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
 ![](media/everclamp_logo.png)
 
 ## Specification

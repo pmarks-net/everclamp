@@ -9,7 +9,7 @@ The Everclamp specification defines the following rectangular array of threaded 
 
 ## Github repo
 
-https://github.com/pmarks-net/everclamp/
+[https://github.com/pmarks-net/everclamp/](https://github.com/pmarks-net/everclamp/)
 
 ## Why would anyone want a dense array of threaded holes?
 

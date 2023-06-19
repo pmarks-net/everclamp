@@ -32,11 +32,11 @@ The main use case is 3D printing with layer heights around 0.2 mm, so a thread p
 
 ## Why 25/3 mm?
 
-The densest possible spacing for an array of M6 holes is about 8 mm, so we're looking for a number in that ballpark.  I don't like 10 mm because it's not dense enough.
+The densest possible spacing for an array of M6 holes is about 8 mm, so we're looking for a number in that ballpark.  10 mm is not dense enough for clamping wherever.
 
-For a grid standard to make any sense in the context of the metric system, it needs to include round numbers like "100 mm".  It turns out that 25/3 = 8.333 is very close to our target density.  This spacing includes numbers like 16.6, 25, 33.3, 50, 66, 100, it's the megahertz race all over again.
+For a grid standard to make any sense in the context of the metric system, it needs to include round numbers like "100 mm".  It turns out that 25/3 = 8.333 is very close to our target density.  This spacing includes numbers like 16.6, 25, 33.3, 50, 66, 100, so it's like the megahertz race all over again.
 
-The 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm, and `n+12` by 100 mm.  So the everclamp grid aligns with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants) given a large enough array.
+An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25 mm, and `n+12` by 100 mm.  In theory, the Everclamp grid is compatible with [VESA MIS-F M6](https://en.wikipedia.org/wiki/Flat_Display_Mounting_Interface#Variants), given a large enough array.
 
 <img src="media/everclamp5x5.jpg" width="480">
 
@@ -47,7 +47,9 @@ This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an o
 
 ## Calibration
 
-Always use an off-the-shelf M6 nut and bolt for tolerance calibration when 3D printing Everclamp-compatible threads.
+How do you make standard nuts and bolts with a 3D printer?  I modeled an array of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can explore what scaling factor is needed to make your slicer and printer fit and off-the-shelf M6 nut and bolt:
+
+<img src="media/calibration_arrays.jpg" width="480">
 
 When I create M6x1 threads in Fusion360, the holes print too tight.  My solution is a bit janky, but it works:
 

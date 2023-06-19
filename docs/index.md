@@ -19,16 +19,16 @@ My point is not that a dense array of threaded holes is incredibly useful, but i
 
 Let's see what the metric system has to offer:
 
-| Bolt Size | Thread Pitch (mm) | Thread Diameter (mm) | Hexagonal Head Width (mm)|
-|-----------|-------------------|----------------------|--------------------------|
-| M3        | 0.5               | 3                    | 5.5                      |
-| M4        | 0.7               | 4                    | 7                        |
-| M5        | 0.8               | 5                    | 8                        |
-| M6        | 1                 | 6                    | 10                       |
-| M7        | 1                 | 7                    | 11                       |
-| M8        | 1.25              | 8                    | 13                       |
+| Bolt Size | Thread Pitch (mm) | Thread Diameter (mm) | Cross section (mm^2)|
+|-----------|-------------------|----------------------|---------------------|
+| M3        | 0.5               | 3                    | 5.0                 |
+| M4        | 0.7               | 4                    | 8.8                 |
+| M5        | 0.8               | 5                    | 14.2                |
+| **M6**    | **1**             | **6**                | **20.1**            |
+| M7        | 1                 | 7                    | 28.9                |
+| M8        | 1.25              | 8                    | 36.6                |
 
-The main use case is 3D printing with layer heights around 0.2 mm, so a thread pitch below 1 mm is not reliable.  M6 is the smallest size with a 1 mm pitch, and also has enough cross-sectional area for light duty plastic thumbscrews.
+The main use case is 3D printing with layer heights around 0.2 mm, so a thread pitch below 1 mm is not reliable.  M6 is the smallest size with a 1 mm pitch, and also provides enough area for light duty plastic thumbscrews.
 
 ## Why 25/3 mm?
 

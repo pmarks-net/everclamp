@@ -71,11 +71,11 @@ If you already have a `*.bundle.scad` file that refers here, then the remaining 
 - Print
 - Enjoy threads
 
-## Sharing 3D models with thread calibration
+## How to share a 3D model with thread calibration
 
-Suppose you want to create and share a 3D model that includes threads. It is not possible to make a single STL file that works for everyone, but what if you could share a model with *adjustable threads*?
+Suppose you wish to create and share a 3D model that includes threads. It is not possible to make a single STL file that works for everyone, but what if you could share a model with *adjustable* threads?
 
-Well, if the model is completely designed in OpenSCAD, this is straightforward:
+If the model were designed completely in OpenSCAD, this would be straightforward:
 
 ![](media/openscad_hole.png)
 

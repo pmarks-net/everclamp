@@ -58,15 +58,16 @@ These are the steps required to print M6 threads accurately:
 
 ![](media/calibration_arrays.jpg)
 
-If you already have a `.bundle.scad` file that refers here, then the remaining steps are:
+If you already have a `*.bundle.scad` file that refers here, then the remaining steps are:
 
 - Install OpenSCAD from https://openscad.org/
-- Open the `.bundle.scad` file
+- Open the `*.bundle.scad` file
 - At the top, edit `m6_hole_scale_xy` or `m6_bolt_scale_xy` to match your calibrated value
-- Click `Save`, then `Preview`.  You should be able to see the model and threads.
-- Click `Render` (sometimes it's a bit slow.)
+- Click `Save`, then `Preview` (you should be able to see the model and threads)
+- Click `Render` (might be slow)
 - Click `Export to STL`
-- Print the STL
+- Print
+- Enjoy threads
 
 ## Sharing 3D models with thread calibration
 
@@ -76,7 +77,7 @@ Well, if the model is completely designed in OpenSCAD, this is straightforward:
 
 ![](media/openscad_hole.png)
 
-I also found a [janky way to scale threads in Fusion360](fusion360), but my point is not to list workarounds for every piece of software. If our goal is to solve the thread printing problem in general, then the solution needs to work with any design tool.
+I also found a [janky way to scale threads in Fusion360](fusion360), but my point is not to list workarounds for every piece of software. If we wish to solve the thread printing problem in general, then the solution must work with any design tool.
 
 Here's what to do instead:
 
@@ -92,7 +93,7 @@ Here is code that solves most of these problems: [https://github.com/pmarks-net/
 
 [everclamp_thread_cutter.scad](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/everclamp_thread_cutter.scad) demonstrates the same pattern as the screenshot above: `difference() { /*some object*/; /*threads*/; }`.  When using [bundle_scad.py](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/bundle_scad.py) with `import <foo.stl.scad>`, replace the `cube()` with `stl_blob()`.
 
-Note that this does not work with Thingiverse Customizer, because their OpenSCAD version is too old for BOSL2: `text(str(version()));` reports `[2015, 3, 0]`. Though it may be possible using a screw threads library with pre-2015 syntax.
+Note that this does not work with Thingiverse Customizer because their OpenSCAD version is too old for BOSL2: `text(str(version()));` reports `[2015, 3, 0]`. Though it may be possible using a screw threads library with pre-2015 syntax.
 
 ## Example
 

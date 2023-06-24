@@ -46,114 +46,17 @@ An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25
 
 ## Calibration
 
-I modeled arrays of M6 holes ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl)) and M6 bolts ([scad](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad), [stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl)) scaled by 90-114% in the X-Y plane, so you can print these calibration models and explore which scaling factor is needed to make your printing setup compatible with off-the-shelf M6 nuts and bolts.
+These are the steps required to print M6 threads accurately:
 
-In an ideal future, slicers and printers would just make perfect nuts and bolts at 100% scaling factor, in which case these models could serve as a benchmark.
+- Print [calibration_holes.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl) and [calibration_bolts.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl) using the same printer/slicer settings you plan to use for your threaded object.
+  
+- Buy a single M6 nut and bolt from a hardware store (if you don't one already).  Play with them a bit, feel how they wobble and spin.
+
+- Try threading the M6 bolt into the 100% hole, moving up/down in size until you find one that fits like the M6 nut.  In the photo below, my bolt is in the 108% hole, so I need to print with `m6_hole_scale_xy = 108/100;`
+
+- Try threading the M6 nut over the 100% bolt, moving up/down in size until you find one that fits like the M6 bolt.  In the photo below, my nut is on the 96% bolt, so I need to print with `m6_bolt_scale_xy = 96/100;`.  If you need the bolts more spread out, you can flex or cut the base, or [edit the model](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad).
 
 ![](media/calibration_arrays.jpg)
-
-## Thread scaling in Fusion360
-
-When I create M6 threads in Fusion360, the only scaling factor available is 100%, which prints too tight, so here is a somewhat-janky workaround:
-
-- Search `%localappdata%\Autodesk` for the `ISOMetricprofile.xml` file.  See [this article](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Custom-Threads-in-Fusion-360.html) for details.
-
-- Find this section:
-
-```
-  <ThreadSize>
-    <Size>6.0</Size>
-    <Designation>
-      <ThreadDesignation>M6x1</ThreadDesignation>
-      <CTD>M6x1</CTD>
-      <Pitch>1.0</Pitch>
-      ...
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H</Class>
-        <MajorDia>6.147</MajorDia>
-        <PitchDia>5.425</PitchDia>
-        <MinorDia>5.035</MinorDia>
-        <TapDrill>5.0</TapDrill>
-      </Thread>
-```
-
-- Insert these scaled alternatives:
-
-```
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 90%</Class>
-        <MajorDia>5.532</MajorDia>
-        <PitchDia>4.883</PitchDia>
-        <MinorDia>4.532</MinorDia>
-        <TapDrill>4.500</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 92%</Class>
-        <MajorDia>5.655</MajorDia>
-        <PitchDia>4.991</PitchDia>
-        <MinorDia>4.632</MinorDia>
-        <TapDrill>4.600</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 94%</Class>
-        <MajorDia>5.778</MajorDia>
-        <PitchDia>5.099</PitchDia>
-        <MinorDia>4.733</MinorDia>
-        <TapDrill>4.700</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 96%</Class>
-        <MajorDia>5.901</MajorDia>
-        <PitchDia>5.208</PitchDia>
-        <MinorDia>4.834</MinorDia>
-        <TapDrill>4.800</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 98%</Class>
-        <MajorDia>6.024</MajorDia>
-        <PitchDia>5.316</PitchDia>
-        <MinorDia>4.934</MinorDia>
-        <TapDrill>4.900</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 102%</Class>
-        <MajorDia>6.270</MajorDia>
-        <PitchDia>5.534</PitchDia>
-        <MinorDia>5.136</MinorDia>
-        <TapDrill>5.100</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 104%</Class>
-        <MajorDia>6.393</MajorDia>
-        <PitchDia>5.642</PitchDia>
-        <MinorDia>5.236</MinorDia>
-        <TapDrill>5.200</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 106%</Class>
-        <MajorDia>6.516</MajorDia>
-        <PitchDia>5.750</PitchDia>
-        <MinorDia>5.337</MinorDia>
-        <TapDrill>5.300</TapDrill>
-      </Thread>
-      <Thread>
-        <Gender>internal</Gender>
-        <Class>6H x 108%</Class>
-        <MajorDia>6.639</MajorDia>
-        <PitchDia>5.859</PitchDia>
-        <MinorDia>5.438</MinorDia>
-        <TapDrill>5.400</TapDrill>
-      </Thread>
-```
 
 ## Example
 

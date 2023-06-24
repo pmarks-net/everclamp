@@ -48,9 +48,9 @@ An 8.333 mm spacing means that columns `n` and `n+3` are separated by exactly 25
 
 These are the steps required to print M6 threads accurately:
 
-- Print [calibration_holes.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl) and [calibration_bolts.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl) using the same printer/slicer settings you plan to use for your threaded object.
-  
 - Buy a single M6 nut and bolt from a hardware store (if you don't one already).  Play with them a bit, feel how they wobble and spin.
+
+- Print [calibration_holes.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_holes.stl) and [calibration_bolts.stl](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.stl) using the same printer/slicer settings you plan to use for your threaded object.
 
 - Try threading the M6 bolt into the 100% hole, moving up/down in size until you find one that fits like the M6 nut.  In the photo below, my bolt is in the 108% hole, so I need to print with `m6_hole_scale_xy = 108/100;`
 

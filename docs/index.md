@@ -91,7 +91,7 @@ Here's what to do instead:
 - Distribute that file
 - A "user" only has to install OpenSCAD (no libraries), edit 1 line of code, and render the model
 
-I've written code to solve most of these problems: [https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
+I've written code to solve most of these problems: [https://github.com/pmarks-net/everclamp/tree/main/bundle_scad/](https://github.com/pmarks-net/everclamp/tree/main/bundle_scad/)
 
 [everclamp_thread_cutter.scad](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/everclamp_thread_cutter.scad) demonstrates the same pattern as the screenshot above: `difference() { /*some object*/; /*threads*/; }`.  When using [bundle_scad.py](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/bundle_scad.py) with `import <foo.stl.scad>`, replace the `cube()` with `stl_blob()`.
 

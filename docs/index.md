@@ -62,7 +62,7 @@ These are the steps required to print M6 threads accurately:
 
 If you already have a `*.bundle.scad` file that refers here, then the remaining steps are:
 
-- Install OpenSCAD from https://openscad.org/
+- Install OpenSCAD from [https://openscad.org/](https://openscad.org/)
 - Open the `*.bundle.scad` file
 - At the top, edit `m6_hole_scale_xy` or `m6_bolt_scale_xy` to match your calibrated value
 - Click `Save`, then `Preview` (you should be able to see the model and threads)

@@ -66,6 +66,7 @@ If you already have a `.bundle.scad` file that refers here, then the remaining s
 - Click `Save`, then `Preview`.  You should be able to see the model and threads.
 - Click `Render` (sometimes it's a bit slow.)
 - Click `Export to STL`
+- Print the STL
 
 ## Sharing 3D models with thread calibration
 

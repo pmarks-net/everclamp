@@ -70,15 +70,13 @@ If you already have a `.bundle.scad` file that refers here, then the remaining s
 
 ## Sharing 3D models with thread calibration
 
-Suppose you want to create and share a 3D model that includes threads.
+Suppose you want to create and share a 3D model that includes threads. It is impossible to make a single STL file that works for everyone.  What if you could just share a model with adjustable threads?
 
-It is impossible to make a single STL file that works for everyone.  What if you could just share an adjustable model?
-
-Well if everyone made everything in OpenSCAD, this would be trivial:
+If the model is completely designed in OpenSCAD, this is straightforward:
 
 ![](media/openscad_hole.png)
 
-I also found a [janky way to scale threads in Fusion360](fusion360), but that's beside the point. If our goal is to solve the general thread printing problem, then the solution cannot depend on a particular design tool.
+I also found a [janky way to scale threads in Fusion360](fusion360), but my point is not to list workarounds for every design tool. If our goal is to solve the thread printing problem in general, then the solution needs to work with any model.
 
 Here's what to do instead:
 
@@ -88,12 +86,13 @@ Here's what to do instead:
 - Write OpenSCAD code to cut threads where you want them.  SCAD cannot "query" the STL model, so you will need to hard-code a few coordinates.
 - Bundle up the STL, SCAD, and SCAD libraries into one `.bundle.scad` file
 - Distribute that file
-- A "user" has to install OpenSCAD (no libraries!), edit 1 line of code, and render the model.
+- A "user" only has to install OpenSCAD (no libraries), edit 1 line of code, and render the model.
 
-Here is code that solves most of these problems:
+Here is code that solves most of these problems: [https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
 
-[https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
+[everclamp_thread_cutter.scad](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/everclamp_thread_cutter.scad) demonstrates the same pattern as the screenshot above: `difference() { /*some object*/; /*threads*/; }`.  When using [bundle_scad.py](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/bundle_scad.py) with `import <foo.stl.scad>`, replace the `cube()` with `stl_blob()`.
 
+Note that this does not work with Thingiverse Customizer, because their OpenSCAD version is too old for BOSL2: `text(str(version()));` reports `[2015, 3, 0]`. Though it may be possible using a screw threads library with pre-2015 syntax.
 ## Example
 
 This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper, a sponge, etc.:

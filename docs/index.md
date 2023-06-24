@@ -9,11 +9,11 @@ The Everclamp specification defines the following rectangular array of threaded 
 - Thread pattern: **M6x1**
 - Grid spacing: **25/3 mm** (8.333 mm) center to center
 
-## Github repo
+## GitHub repo
 
 [https://github.com/pmarks-net/everclamp/](https://github.com/pmarks-net/everclamp/)
 
-## Why would anyone want a dense array of threaded holes?
+## Why a dense array of threaded holes?
 
 For clamping stuff wherever.
 

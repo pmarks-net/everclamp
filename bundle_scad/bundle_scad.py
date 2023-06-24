@@ -146,10 +146,10 @@ def parse_file(directory, filename, included_files, used_files, nesting_level=0)
                     continue
 
                 if nesting_level == 0:
-                    match = re.match(r'^([a-zA-Z_]+[.]stl)[.]scad$', f)
+                    match = re.match(r'^([a-zA-Z0-9_]+[.]stl)[.]scad$', f)
                     if match:
                         stl_file, = match.groups()
-                        stl_to_scad(stl_file)
+                        stl_to_scad(os.path.join(directory, stl_file))
                 
                 # Recursively parse the included file
                 output += parse_file(

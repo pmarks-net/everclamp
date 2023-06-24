@@ -1,6 +1,14 @@
 // Use calibration_holes.stl to find the right value for your printer.
 thread_scale_xy = 100/100;
 
+
+
+
+
+
+
+// If you're just printing a model, ignore everything below this line.
+
 $fn=50;
 
 holes_x = 3;
@@ -29,7 +37,7 @@ suppress_holes = [
   [center_x+1, center_y-1, 4],   // z > 0, cut threads z mm from the bottom.
 ];
 
-// These values are defined by everclamp.org
+// These values defined by everclamp.org
 screw_spec = "M6x1";
 spacing = 25/3;
 

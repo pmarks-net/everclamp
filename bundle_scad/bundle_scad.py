@@ -1,3 +1,28 @@
+"""
+This bundle_scad utility does two things:
+
+(1) Convert STL files to OpenSCAD
+
+  To do this, either process foo.stl directly, or process a .scad
+  file containing:
+
+  include <foo.stl.scad>  // limited to [a-zA-Z0-9_]
+
+  In either case, foo.stl.scad will contain a module named stl_blob()
+  with polyhedron data from foo.stl.
+
+(2) Bundle a .scad file (+ includes) into a single .bundle.scad file.
+
+  The primary use case is for printing screw threads.  You can generate
+  an unthreaded STL file, write OpenSCAD code to cut threads into it,
+  and then distribute the resulting bundle, so that users can make
+  calibration adjustments prior to printing.
+
+  I have NOT successfully tested this with Thingiverse Customizer,
+  because they use an OpenSCAD version from 2015, which is too old
+  to run the libraries I care about.
+"""
+
 import hashlib
 import os
 import pathlib

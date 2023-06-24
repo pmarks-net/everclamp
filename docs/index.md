@@ -86,12 +86,12 @@ Here's what to do instead:
 - Deisgn your model in whatever software you want, but omit the threads
 - Export to STL
 - Convert the STL to OpenSCAD geometry
-- Write OpenSCAD code to cut threads where you want them.  SCAD cannot "query" the STL model, so you will need to hard-code some coordinates.  For Everclamp, you can specify the xyz coordinates of one hole and compute the rest.
+- Write OpenSCAD code to cut threads in the right places.  SCAD cannot "query" the STL model, so you will need to hard-code some coordinates.  For Everclamp, you can specify the xyz coordinates of one hole and compute the rest.
 - Bundle up the STL, SCAD, and SCAD libraries into one `.bundle.scad` file
 - Distribute that file
-- A "user" only has to install OpenSCAD (no libraries), edit 1 line of code, and render the model.
+- A "user" only has to install OpenSCAD (no libraries), edit 1 line of code, and render the model
 
-Here is code that solves most of these problems: [https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
+I've written code to solve most of these problems: [https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
 
 [everclamp_thread_cutter.scad](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/everclamp_thread_cutter.scad) demonstrates the same pattern as the screenshot above: `difference() { /*some object*/; /*threads*/; }`.  When using [bundle_scad.py](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/bundle_scad.py) with `import <foo.stl.scad>`, replace the `cube()` with `stl_blob()`.
 

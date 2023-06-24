@@ -58,6 +58,30 @@ These are the steps required to print M6 threads accurately:
 
 ![](media/calibration_arrays.jpg)
 
+## Sharing 3D models with thread calibration
+
+Suppose you want to create and share a 3D model that includes threads.  It is impossible to make a single STL file that works for everyone.
+
+What if you could just share an adjustable model? Well if everyone made everything in OpenSCAD, this would be trivial:
+
+![](media/openscad_hole.png)
+
+I also found a [janky way to scale threads in Fusion360](fusion360), but that's beside the point. If our goal is to solve the general thread printing problem, then the solution cannot depend on a particular design tool.
+
+Here's what to do instead:
+
+- Deisgn your model in whatever software you want, but omit the threads
+- Export to STL
+- Convert the STL to OpenSCAD geometry
+- Write OpenSCAD code to cut threads where you want them.  SCAD cannot "query" the STL model, so you will need to hard-code a few coordinates.
+- Bundle up the STL, SCAD, and SCAD libraries into one `.bundle.scad` file
+- Distribute that file
+- A "user" has to install OpenSCAD (no libraries!), edit 1 line of code, and render the model.
+
+Here is code that solves most of these problems:
+
+https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/
+
 ## Example
 
 This [5x5 Everclamp](https://www.thingiverse.com/thing:6083263) attaches to an oscillating multitool, using a 5x5 sqwasher and thumbscrews to hold sandpaper, a sponge, etc.:

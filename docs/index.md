@@ -58,15 +58,16 @@ These are the steps required to print M6 threads accurately:
 
 ![](media/calibration_arrays.jpg)
 
-If you already have a `.bundle.scad` file that refers here, then the remaining steps are:
+If you already have a `*.bundle.scad` file that refers here, then the remaining steps are:
 
 - Install OpenSCAD from https://openscad.org/
-- Open the `.bundle.scad` file
+- Open the `*.bundle.scad` file
 - At the top, edit `m6_hole_scale_xy` or `m6_bolt_scale_xy` to match your calibrated value
 - Click `Save`, then `Preview`.  You should be able to see the model and threads.
-- Click `Render` (sometimes it's a bit slow.)
+- Click `Render` (might be slow)
 - Click `Export to STL`
-- Print the STL
+- Print
+- Enjoy threads
 
 ## Sharing 3D models with thread calibration
 

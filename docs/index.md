@@ -71,7 +71,7 @@ If you already have a `*.bundle.scad` file that refers here, then the remaining 
 - Print
 - Enjoy threads
 
-## How to share 3D models with thread calibration
+## Sharing 3D models with thread calibration
 
 Suppose you want to create and share a 3D model that includes threads. It is not possible to make a single STL file that works for everyone, but what if you could share a model with *adjustable threads*?
 
@@ -79,7 +79,7 @@ Well, if the model is completely designed in OpenSCAD, this is straightforward:
 
 ![](media/openscad_hole.png)
 
-I also found a [janky way to scale threads in Fusion360](fusion360), but my point is not to list workarounds for every piece of software. If we wish to solve the thread printing problem in general, then the solution must work with any design tool.
+I also found a [janky way to scale threads in Fusion360](fusion360.md), but my point is not to list workarounds for every piece of software. If we wish to solve the thread printing problem in general, then the solution must work with any design tool.
 
 Here's what to do instead:
 

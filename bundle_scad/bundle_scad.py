@@ -1,13 +1,31 @@
-import os
-import re
-import pathlib
-import stl  # XXX offer to install?
 import hashlib
+import os
+import pathlib
+import re
+import subprocess
+import sys
 import tkinter
 import tkinter.filedialog
 import traceback
-import sys
-import argparse
+
+
+def run(*args):
+    print(' '.join(args))
+    process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    for line in iter(process.stdout.readline, b''):
+        print(line.decode('utf-8'), end='')
+    process.stdout.close()
+    process.wait()
+
+
+try:
+    import stl
+except ImportError:
+    answer = input(f"Failed to import stl.\n\nWould you like to 'pip install numpy-stl'? (Y/n) ")
+    if answer.lower() == 'y' or answer == '':
+        run(sys.executable, "-m", "pip", "install", "numpy-stl")
+import stl
+
 
 # Hopefully this works on all OSes:
 home_dir = os.path.expanduser('~')

@@ -1,8 +1,5 @@
-include <BOSL2/std.scad>
-include <BOSL2/screws.scad>
-
-// Use calibration_bolts.stl to find the right value for your printer.
-thread_scale_xy = 96/100;
+// Measure this value with https://everclamp.org/#calibration
+m6_bolt_scale_xy = 100/100;
 
 // Dimensions of the thumb-fitting head.
 thumb_diameter = 15;
@@ -30,6 +27,9 @@ difference() {
 }
 
 translate([0, 0, thumb_height]) {
-    scale([thread_scale_xy, thread_scale_xy, 1])
+    scale([m6_bolt_scale_xy, m6_bolt_scale_xy, 1])
     screw(screw_spec, length=screw_length, head="none", drive="none", blunt_start1=false, blunt_start2=true, anchor=BOTTOM);
 }
+
+include <BOSL2/std.scad>
+include <BOSL2/screws.scad>

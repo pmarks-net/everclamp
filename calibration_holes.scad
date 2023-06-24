@@ -1,4 +1,4 @@
-// An array of M6 holes (female threads) with different thread_scale_xy values.
+// An array of M6 holes (female threads) with different m6_hole_scale_xy values.
 // Use a real M6 nut and bolt to find the correct value for your slicer/printer.
 
 include <BOSL2/std.scad>

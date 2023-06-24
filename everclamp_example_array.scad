@@ -7,8 +7,8 @@ holes_x = 5;
 holes_y = 5;
 thickness = 8;
 
-// Use calibration_holes.stl to find the right value for your printer.
-thread_scale_xy = 108/100;
+// Measure this value with https://everclamp.org/#calibration
+m6_hole_scale_xy = 108/100;
 
 // These values defined by everclamp.org
 screw_spec = "M6x1";
@@ -20,7 +20,7 @@ difference() {
   for(x=[1:holes_x]) {
     for(y=[1:holes_y]) {
       translate([spacing*x, spacing*y, -1])
-      scale([thread_scale_xy, thread_scale_xy, 1])
+      scale([m6_hole_scale_xy, m6_hole_scale_xy, 1])
       screw_hole(screw_spec, thread=true, length=thickness+2, anchor=BOTTOM);
     }
   }

@@ -1,12 +1,12 @@
-// Use calibration_holes.stl to find the right value for your printer.
-thread_scale_xy = 100/100;
+// Measure this value with https://everclamp.org/#calibration
+m6_hole_scale_xy = 100/100;
 
-
-
-
-
-
-
+//
+//
+//
+//
+//
+//
 // If you're just printing a model, ignore everything below this line.
 
 $fn=50;
@@ -32,12 +32,12 @@ thread_length = 8;
 // Leave this empty for a complete array.
 // Otherwise, specific holes may be turned off or cut short.
 suppress_holes = [
-  [center_x, center_y, 0],       // z=0, hole suppressed
-  [center_x-1, center_y-1, -4],  // z < 0, cut threads z mm from the top.
-  [center_x+1, center_y-1, 4],   // z > 0, cut threads z mm from the bottom.
+//  [center_x, center_y, 0],       // z=0, hole suppressed
+//  [center_x-1, center_y-1, -4],  // z<0, cut threads z mm from the top
+//  [center_x+1, center_y-1, 4],   // z>0, cut threads z mm from the bottom
 ];
 
-// These values defined by everclamp.org
+// These values are defined by everclamp.org
 screw_spec = "M6x1";
 spacing = 25/3;
 
@@ -64,7 +64,7 @@ difference() {
     for(y=[0:holes_y-1]) {
       z = lookup_suppress_holes(x, y);
       translate([spacing*(x-reference_hole.x), spacing*(y-reference_hole.y), 0])
-      scale([thread_scale_xy, thread_scale_xy, 1])      
+      scale([m6_hole_scale_xy, m6_hole_scale_xy, 1])
       if (z == undef) {
         // Default, cut threads the entire length.
         screw_hole(screw_spec, thread=true, length=thread_length, anchor=BOTTOM);

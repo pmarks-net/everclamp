@@ -54,15 +54,26 @@ These are the steps required to print M6 threads accurately:
 
 - Try threading the M6 bolt into the 100% hole, moving up/down in size until you find one that fits like the M6 nut.  In the photo below, my bolt is in the 108% hole, so I need to print with `m6_hole_scale_xy = 108/100;`
 
-- Try threading the M6 nut over the 100% bolt, moving up/down in size until you find one that fits like the M6 bolt.  In the photo below, my nut is on the 96% bolt, so I need to print with `m6_bolt_scale_xy = 96/100;`.  If you need the bolts more spread out, you can flex or cut the base, or [edit the model](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad).
+- Try threading the M6 nut over the 100% bolt, moving up/down in size until you find one that fits like the M6 bolt.  In the photo below, my nut is on the 96% bolt, so I need to print with `m6_bolt_scale_xy = 96/100;`.  (If you want to spread out the bolts, you can flex or cut the base, or [edit the model](https://github.com/pmarks-net/everclamp/blob/main/calibration_bolts.scad).)
 
 ![](media/calibration_arrays.jpg)
 
+If you already have a `.bundle.scad` file that refers here, then the remaining steps are:
+
+- Install OpenSCAD from https://openscad.org/
+- Open the `.bundle.scad` file
+- At the top, edit `m6_hole_scale_xy` or `m6_bolt_scale_xy` to match your calibrated value
+- Click `Save`, then `Preview`.  You should be able to see the model and threads.
+- Click `Render` (sometimes it's a bit slow.)
+- Click `Export to STL`
+
 ## Sharing 3D models with thread calibration
 
-Suppose you want to create and share a 3D model that includes threads.  It is impossible to make a single STL file that works for everyone.
+Suppose you want to create and share a 3D model that includes threads.
 
-What if you could just share an adjustable model? Well if everyone made everything in OpenSCAD, this would be trivial:
+It is impossible to make a single STL file that works for everyone.  What if you could just share an adjustable model?
+
+Well if everyone made everything in OpenSCAD, this would be trivial:
 
 ![](media/openscad_hole.png)
 

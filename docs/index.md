@@ -86,7 +86,7 @@ Here's what to do instead:
 - Deisgn your model in whatever software you want, but omit the threads
 - Export to STL
 - Convert the STL to OpenSCAD geometry
-- Write OpenSCAD code to cut threads where you want them.  SCAD cannot "query" the STL model, so you will need to hard-code a few coordinates.
+- Write OpenSCAD code to cut threads where you want them.  SCAD cannot "query" the STL model, so you will need to hard-code some coordinates.  For Everclamp, you can specify the xyz coordinates of one hole and compute the rest.
 - Bundle up the STL, SCAD, and SCAD libraries into one `.bundle.scad` file
 - Distribute that file
 - A "user" only has to install OpenSCAD (no libraries), edit 1 line of code, and render the model.

@@ -92,7 +92,7 @@ Here's what to do instead:
 
 Here is code that solves most of these problems:
 
-https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/
+[https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/](https://github.com/pmarks-net/everclamp/blob/main/bundle_scad/)
 
 ## Example
 

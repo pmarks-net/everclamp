@@ -1,4 +1,4 @@
-// Measure this value with https://everclamp.org/#calibration
+// Measure this value with https://pmarks-net.github.io/everclamp/#calibration
 m6_hole_scale_xy = 100/100;
 
 //
@@ -37,7 +37,7 @@ suppress_holes = [
 //  [center_x+1, center_y-1, 4],   // z>0, cut threads z mm from the bottom
 ];
 
-// These values are defined by everclamp.org
+// These values are defined by pmarks-net.github.io/everclamp
 screw_spec = "M6x1";
 spacing = 25/3;
 

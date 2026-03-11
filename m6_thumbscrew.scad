@@ -1,4 +1,4 @@
-// Measure this value with https://everclamp.org/#calibration
+// Measure this value with https://pmarks-net.github.io/everclamp/#calibration
 m6_bolt_scale_xy = 100/100;
 
 // Dimensions of the thumb-fitting head.

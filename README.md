@@ -1,1 +1,1 @@
-Content for https://everclamp.org/
+Content for https://pmarks-net.github.io/everclamp/

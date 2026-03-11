@@ -7,10 +7,10 @@ holes_x = 5;
 holes_y = 5;
 thickness = 8;
 
-// Measure this value with https://everclamp.org/#calibration
+// Measure this value with https://pmarks-net.github.io/everclamp/#calibration
 m6_hole_scale_xy = 108/100;
 
-// These values defined by everclamp.org
+// These values defined by pmarks-net.github.io/everclamp
 screw_spec = "M6x1";
 spacing = 25/3;
 

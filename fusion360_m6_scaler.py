@@ -1,5 +1,5 @@
 # This code generates the Fusion360 ISOMetricprofile.xml values
-# shown on https://everclamp.org/
+# shown on https://pmarks-net.github.io/everclamp/
 
 from xml.etree import ElementTree as ET
 import io
